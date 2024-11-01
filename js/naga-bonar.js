@@ -133,6 +133,7 @@ var NagaBonar = (function() {
     }
 
     return {
+        random: random,
         // Initialize all blok for grid
         initGrid: function(elm, callback) {
             getStorage();
@@ -440,3 +441,7 @@ var NagaBonar = (function() {
         }
     }
 })()
+
+window.NagaBonar = NagaBonar
+
+window.NagaBonar.jq = window.$
